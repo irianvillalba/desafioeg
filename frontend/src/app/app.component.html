@@ -1,0 +1,26 @@
+<mat-toolbar fxLayout="row" fxLayoutAlign="space-between center">
+  <span>App de contatos</span> &nbsp;
+  <button mat-raised-button routerLink="/contato">Contato</button>
+  &nbsp;
+  <button mat-raised-button routerLink="/perfil">Perfil</button>
+  &nbsp;
+  <button mat-raised-button (click)="sair()">Sair</button>
+</mat-toolbar>
+
+<div align="center" layout="row" layout-align="center center" >
+  <mat-card class="info-card mat-elevation-z3" style="margin-top: 30px;width: 900px;">
+
+    <mat-card-title>{{titulo}}</mat-card-title>
+    <mat-card-subtitle>
+      {{subtitulo}}
+    </mat-card-subtitle>
+
+    <mat-card-content fxLayout="column" fxLayoutAlign="stretch" >
+
+      <router-outlet></router-outlet>
+    </mat-card-content>
+
+  </mat-card>
+
+
+</div>
