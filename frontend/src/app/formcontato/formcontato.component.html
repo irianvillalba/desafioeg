@@ -1,0 +1,27 @@
+    <form>
+      <p>
+      <mat-form-field>
+        <input matInput type="text" name="txtnome" [(ngModel)]="contato.nome" class="form-control" value="" placeholder="Digite o nome do contato">
+      </mat-form-field>
+      </p>
+      <p>
+      <mat-form-field>
+        <input matInput type="text" name="txtemail" [(ngModel)]="contato.email" class="form-control" value="" placeholder="Digite o email do contato">
+      </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <input matInput type="text" name="txttelefone" [(ngModel)]="contato.telefone" class="form-control" value="" placeholder="Digite o telefone do contato">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <input matInput type="text" name="txtempresa" [(ngModel)]="contato.empresa" class="form-control" value="" placeholder="Digite a empresa do contato">
+        </mat-form-field>
+      </p>
+    </form>
+
+  <mat-card-footer style="padding:10px">
+    <button mat-raised-button color="primary" (click)="cadastrar()">Salvar</button>
+  </mat-card-footer>
+

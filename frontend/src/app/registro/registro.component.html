@@ -1,0 +1,39 @@
+    <form>
+      <p>
+        <mat-form-field>
+          <input matInput
+                 type="text"
+                 name="txtnome"
+                 class="form-control"
+                 placeholder="Digite seu nome"
+                 [(ngModel)]="usuario.nome">
+        </mat-form-field>
+      </p>
+      <p>
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          class="form-control"
+          name="txtemail"
+          placeholder="Digite seu email"
+          [(ngModel)]="usuario.email">
+      </mat-form-field>
+      </p>
+      <p>
+      <mat-form-field>
+        <input
+          matInput
+          type="password"
+          class="form-control"
+          name="txtsenha"
+          placeholder="Digite sua senha"
+          [(ngModel)]="usuario.senha">
+      </mat-form-field>
+      </p>
+    </form>
+
+  <mat-card-footer style="padding:10px">
+    <a mat-raised-button routerLink="/login" >Login</a> &nbsp;
+    <button mat-raised-button color="primary" (click)="cadastrar()">Registrar</button>
+  </mat-card-footer>
