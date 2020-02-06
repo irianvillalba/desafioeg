@@ -1,0 +1,1 @@
+<?php echo e(csrf_token()); ?><?php /**PATH F:\trabalho\desafioeg\backend\resources\views/welcome.blade.php ENDPATH**/ ?>
